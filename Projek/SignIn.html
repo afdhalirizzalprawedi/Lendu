@@ -1,0 +1,61 @@
+<html>
+<center>
+	<head>
+		<meta charset="utf-8">
+		<title>Lendu Login Form</title>
+		<link rel="stylesheet" type="text/css" href="Login.css">
+	</head>
+	<script type="text/javascript">
+		function check() {
+					var a = document.forms["signin"]["name"].value;
+					var b = document.forms["signin"]["pass"].value;
+					var c = document.forms["signin"]["email"].value;
+					if (a == "") {
+						alert("Masukkan Nama");
+						return false;
+					}
+					else if (b == "") {
+						alert("Masukkan Password");
+						return false;
+					}
+					else if (c == "") {
+						alert("Masukkan E-Mail");
+						return false;
+					}
+					else {
+						location.replace("index.html");
+						return true
+					}
+				}
+	</script>
+	<body>
+<div class="loginbox">
+	<h1>Learning Education</h1>
+	<div>
+		<form name="signin">
+		<h2><br>Masukkan Nama</h2>
+		<input type="text" placeholder="Masukkan Nama" name="name" value="">
+
+		<h2><br>Masukkan Password</h2>
+		<input type="password" placeholder="Masukkan Password" name="pass" value="">
+
+		<h2><br>Pilih Jenis Kelamin</h2>
+		<input type="radio" name="Kelamin">Laki-Laki<br>
+		<input type="radio" name="Kelamin">Perempuan<br>
+		<input type="radio" name="Kelamin">Unknown
+
+		<h2><br>Masukkan E-Mail</h2>
+		<input type="text" placeholder="Masukkan E-Mail" name="email" value="">
+	
+		<h2><br>Masukkan Nomor HP</h2>
+		<input type="text" placeholder="Masukkan Nomor HP" name="nohp" value="+62">
+		</form>
+
+		<h2><br></h2>
+	<button onclick="check()">Daftar</button><br>
+	<a href="Login.html"><p>Sudah memiliki akun ?</p></a>
+	</div>
+
+</div>
+	</body>
+</center>

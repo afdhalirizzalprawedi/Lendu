@@ -1,0 +1,76 @@
+body{
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    background-image: url(Login.jpg);
+    font-family: verdana;
+}
+
+.loginbox{
+    width: 420px;
+    height:680px;
+    background: #000;
+    color: #fff;
+    top: 1%; left:35%;
+    position: absolute;
+    box-sizing: border-box;
+    padding: 18px 30px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.4);
+    background-color: rgba(0,0,0,0.5);
+}
+
+
+.register{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    position: absolute;
+    top: -50px;
+    left: calc(50% - 50px);
+}
+
+h1{
+    margin: 0;
+    padding-top: 5px;
+    text-align: center;
+    font-size: 40px;
+    color: #FF8C00;
+}
+
+h2{
+    margin: 0;
+    padding-top: 5px;
+    text-align: center;
+    font-size: 20px;
+    color:  #1E90FF;
+}
+.loginbox input{
+    height: 25px;
+    width: 80%;
+    outline: none;
+    border-radius: 4px;
+}
+
+.loginbox input[placeholder]
+{
+    text-align: center;
+}
+
+.loginbox input[type="radio"]
+{
+    height: 15px;
+    width: 10%;
+}
+
+button
+{
+    width: 100%;
+    border: none;
+    outline: none;
+    height: 40px;
+    background: #fb2525;
+    color: #fff;
+    font-size: 18px;
+    border-radius: 20px;
+}

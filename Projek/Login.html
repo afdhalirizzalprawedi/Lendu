@@ -1,0 +1,43 @@
+<html>
+<center>
+	<head>
+		<meta charset="utf-8">
+		<title>Lendu Login Form</title>
+		<link rel="stylesheet" type="text/css" href="Login.css">
+		<script type="text/javascript">
+			function check() {
+				var a = document.forms["Login"]["email"].value;
+				var b = document.forms["Login"]["pass"].value;
+				if (a == "") {
+					alert("Masukkan E-mail");
+					return false;
+				}
+				else if (b == "") {
+					alert("Masukkan Password");
+					return false;
+				}
+				else {
+					location.replace("index.html");
+					return true
+				}
+			}
+		</script>
+	<body>
+<div class="loginbox">
+	<h1>Learning Education</h1>
+	<div>
+		<form name="Login">
+		<h2><br>Masukkan E-Mail</h2>
+		<input type="text" placeholder="Masukkan Nama" name="email">
+
+		<h2><br>Masukkan Password</h2>
+		<input type="password" placeholder="Masukkan Password" name="pass">
+		</form>
+		
+		<h2><br></h2>
+	<button onclick="check()">Masuk</button><br>
+	<br>
+	<a href="SignIn.html"><p>Belum memiliki akun ?</p></a>
+	</div>
+</center>
+</html>
